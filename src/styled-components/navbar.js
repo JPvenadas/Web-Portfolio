@@ -27,7 +27,7 @@ export const LogoContainer = styled.div`
     }
 `
 export const Logo = styled.h2`
-    font-weight: 800;
+    font-weight: 600;
     font-size: 16px;
     color: #64795D;
 `
@@ -44,6 +44,7 @@ export const NavLinksContainer = styled.div`
         background: ${({background})=>background};
         height: 100vh;
         justify-content: flex-end;
+        z-index: 2;
     }
 `
 export const Navlinks = styled.ul`
