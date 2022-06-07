@@ -30,7 +30,7 @@ const Header = () => {
             <Button
             onMouseEnter={()=>{SetButton2hover(true)}}
             onMouseLeave={()=>{SetButton2hover(false)}}
-            >{button2hover? <ion-icon class="icon" color="white" name="document-text"></ion-icon>: ''} Download CV</Button>
+            >{button2hover? <ion-icon class="icon" color="white" name="document-text"></ion-icon>: ''} My Resume</Button>
             </ButtonContainer>
         </Container>
     </MainContainer>

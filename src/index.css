@@ -49,5 +49,18 @@ code {
  left: 15px;
  font-size: 20px;
  position: absolute;
+ animation: wave 1s infinite ease
+}
+
+@keyframes wave {
+  15%{
+    transform: rotate(20deg) translateX(5px);
+  }
+  40%{
+    transform: rotate(-20deg) translateX(-5px);
+  }
+  47%{
+    transform: rotate(0deg);
+  }
 }
 
