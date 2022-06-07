@@ -18,8 +18,8 @@ const Navbar = () => {
             <LogoContainer>
               <Logo>Jp Venadas.</Logo>
             </LogoContainer>
-            <NavLinksContainer>
-              <Navlinks>
+            <NavLinksContainer background={navopen? "#97AA90": "#EEF0EB"} right={navopen? "0": "-400px" }>
+              <Navlinks right={navopen? "0": "-200px" }>
                 <Navlink>
                   <a href="">About</a>
                 </Navlink>

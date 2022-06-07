@@ -5,6 +5,9 @@ export const MainContainer = styled.div`
     justify-content: center;
     align-items: center;
     height: 82px;
+    @media (max-width: 600px) {
+        height: 60px;
+    }
 `
 export const Container = styled.nav`
     display: flex;
@@ -17,7 +20,10 @@ export const Container = styled.nav`
 export const LogoContainer = styled.div`
     height: 100%;
     display: flex;
-    align-items: flex-end
+    align-items: flex-end;
+    @media (max-width: 600px) {
+        align-items: center
+    }
 `
 export const Logo = styled.h1`
     font-weight: 800;
@@ -27,22 +33,52 @@ export const Logo = styled.h1`
 export const NavLinksContainer = styled.div`
     display: flex;
     justify-content: center;
+    transition: .4s ease;
     height: 100%;
+    @media (max-width: 600px) {
+        position: absolute;
+        top: 60px;
+        right: ${({right})=>right};
+        width: 200px;
+        background: ${({background})=>background};
+        height: 100vh;
+        justify-content: flex-end;
+    }
 `
 export const Navlinks = styled.ul`
     display: flex;
     justify-content: center;
+    transition: .8s ease;
     gap: 40px;
-    align-items: flex-end
+    align-items: flex-end;
+    @media (max-width: 600px) {
+        height: 100%;
+        width: 200px;
+        background:#EEF0EB;
+        gap: 20px;
+        position: absolute;
+        right: ${({right})=>right};
+        padding: 20px;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
 `
 export const Navlink = styled.li`
     font-size: 15px;
+    @media (max-width: 600px) {
+       color: white;
+    }
 `
 export const HammenuContainer = styled.div`
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: flex-end;
-    height: 100%
+    height: 100%;
+    @media(max-width: 600px) {
+        display: flex;
+        align-items: center
+    }
 `
 export const Hammenu = styled.button`
     height: 20px;
