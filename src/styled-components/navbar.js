@@ -26,7 +26,7 @@ export const LogoContainer = styled.div`
         align-items: center
     }
 `
-export const Logo = styled.h1`
+export const Logo = styled.h2`
     font-weight: 800;
     font-size: 16px;
     color: #64795D;
@@ -95,3 +95,4 @@ export const Hammenu = styled.button`
     gap: 5px;
     border-style: none;
 `
+

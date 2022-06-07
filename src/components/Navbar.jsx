@@ -16,21 +16,21 @@ const Navbar = () => {
     <MainContainer>
       <Container>
             <LogoContainer>
-              <Logo>Jp Venadas.</Logo>
+              <Logo>{"<Jp Venadas/>"}</Logo>
             </LogoContainer>
             <NavLinksContainer background={navopen? "#97AA90": "#EEF0EB"} right={navopen? "0": "-400px" }>
               <Navlinks right={navopen? "0": "-200px" }>
                 <Navlink padding="20px 0 0 0">
-                  <a href="">About</a>
+                  <a href="#something">About</a>
                 </Navlink>
                 <Navlink>
-                 <a href="">Skills</a>
+                 <a href="#something">Skills</a>
                 </Navlink>
                 <Navlink>
-                 <a href="">Projects</a>
+                 <a href="#something">Projects</a>
                 </Navlink>
                 <Navlink padding="0 0 20px 0">
-                  <a href="">Contact</a>
+                  <a href="#something">Contact</a>
                 </Navlink>
               </Navlinks>
             </NavLinksContainer>
