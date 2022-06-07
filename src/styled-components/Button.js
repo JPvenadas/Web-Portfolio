@@ -12,7 +12,7 @@ export const Button = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right,#456F3E 0%, #456F3E 56%, transparent 56%, transparent 100%);
+    background: linear-gradient(to right,#456F3E 0%, #456F3E 55%, transparent 55%, transparent 100%);
     background-size: 200%;
     transition: .5s ease;
     background-position: right top;
