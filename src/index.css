@@ -1,7 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #494E48;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -13,3 +17,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ham-top,
+.ham-mid,
+.ham-bot{
+  width: 100%;
+  position: absolute;
+  background: #494E48;
+  height: 2px;
+  top: 4px;
+}
+.ham-mid{
+  top: 10px;
+}
+.ham-bot{
+  top: 16px
+}
+
+.ham-top.clicked{
+ transform: translateY(-4px) rotate(45deg);
+}
+.ham-mid.clicked{
+ display: none;
+}
+.ham-bot.clicked{
+ transform: translateY(-16px) rotate(-45deg);
+}
+
