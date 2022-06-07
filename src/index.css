@@ -26,6 +26,7 @@ code {
   background: #494E48;
   height: 2px;
   top: 4px;
+  transition: .5s ease;
 }
 .ham-mid{
   top: 10px;
@@ -35,12 +36,12 @@ code {
 }
 
 .ham-top.clicked{
- transform: translateY(-4px) rotate(45deg);
+ transform: translateY(4px) rotate(45deg);
 }
 .ham-mid.clicked{
  display: none;
 }
 .ham-bot.clicked{
- transform: translateY(-16px) rotate(-45deg);
+ transform: translateY(-8px) rotate(-45deg);
 }
 
