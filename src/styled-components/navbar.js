@@ -4,6 +4,7 @@ export const MainContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    background:#EEF0EB;
     height: 82px;
     @media (max-width: 600px) {
         height: 60px;
@@ -54,11 +55,10 @@ export const Navlinks = styled.ul`
     @media (max-width: 600px) {
         height: 100%;
         width: 200px;
-        background:#EEF0EB;
+        background:#ffffff;
         gap: 20px;
         position: absolute;
         right: ${({right})=>right};
-        padding: 20px;
         align-items: center;
         justify-content: flex-start;
         flex-direction: column;
@@ -66,8 +66,15 @@ export const Navlinks = styled.ul`
 `
 export const Navlink = styled.li`
     font-size: 15px;
+    width: 100%;
+    transition: .4s ease;
+    text-align: center;
     @media (max-width: 600px) {
        color: white;
+       margin: ${({padding})=> padding};
+       :hover{
+        border-left: 3px solid #97AA90;
+        }   
     }
 `
 export const HammenuContainer = styled.div`

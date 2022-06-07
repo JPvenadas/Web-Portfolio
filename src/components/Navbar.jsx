@@ -20,7 +20,7 @@ const Navbar = () => {
             </LogoContainer>
             <NavLinksContainer background={navopen? "#97AA90": "#EEF0EB"} right={navopen? "0": "-400px" }>
               <Navlinks right={navopen? "0": "-200px" }>
-                <Navlink>
+                <Navlink padding="20px 0 0 0">
                   <a href="">About</a>
                 </Navlink>
                 <Navlink>
@@ -29,7 +29,7 @@ const Navbar = () => {
                 <Navlink>
                  <a href="">Projects</a>
                 </Navlink>
-                <Navlink>
+                <Navlink padding="0 0 20px 0">
                   <a href="">Contact</a>
                 </Navlink>
               </Navlinks>
