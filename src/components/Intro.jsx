@@ -1,30 +1,55 @@
-import React from 'react'
-import { Container,
+import {gsap} from 'gsap'
+import React, {useRef, useEffect} from 'react'
+
+import { MainContainer, 
+        Container,
          Slider,
          Tagline,
          Highlight,
          FlexContainer,
          FlexItem,
          Line,
-         Developer
- } from '../styled-components/Intro'    
+         Developer,
+         TaglineContainer
+ } from '../styled-components/Intro'   
+
 const Intro = () => {
+
+    let text1 = useRef(null)
+    let text1highlight = useRef(null)
+    let line = useRef(null)
+    let dev = useRef(null)
+    let slider = useRef(null)
+    let container = useRef(null)
+
+    const tl = gsap.timeline()
+    useEffect(() => {
+    tl.to(text1, {y: 0, duration: .8})
+      .to(line, {width: '100%', duration: 1}, '<.1')
+      .to(text1highlight, {y: 0, duration: .8}, '<.3')
+      .to(dev, {y: 0, duration: .8}, '<.3')
+      .to(slider, {y: '-200%', duration: .8}, '>.8')
+      .to(container, {y: '-200%', duration: .8} )
+    }, [])
   return (
-      <div>
+      <MainContainer ref={el => container = el}>
           <Container>
-              <Tagline>Join me as I <Highlight>Develop</Highlight>.</Tagline>
+              <TaglineContainer>
+              <Tagline ref={el => text1 = el}>Join me as I </Tagline>
+             <span> </span>
+              <Highlight ref={el => text1highlight = el}> Code.</Highlight>
+              </TaglineContainer>
               <FlexContainer>
-                <FlexItem width="70%">
-                    <Line></Line>
+                <FlexItem width="70%" justify="flex-start">
+                    <Line ref={el => line = el}></Line>
                 </FlexItem>
-                <FlexItem width="30%">
-                    <Developer>Jp Venadas</Developer>
+                <FlexItem width="30%" justify = "center">
+                    <Developer ref={el => dev = el}>Jp Venadas</Developer>
                 </FlexItem>
               </FlexContainer>
           </Container>
-          <Slider></Slider>
-      </div>
-    
+          <Slider ref={el => slider = el}></Slider>
+        </MainContainer>
   )
 }
 

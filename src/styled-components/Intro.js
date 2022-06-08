@@ -1,37 +1,50 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    top: 0;
-    left: 0;
+export const MainContainer = styled.div`
     width: 100vw;
     height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
     background: #fefefe;
-    z-index: 10
+    z-index: 10;
+    overflow: hidden;
+`
+export const Container = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
 `
 export const Slider = styled.div`
     position: absolute;
-    top: -200%;
+    top: 200%;
     left: 0;
     background: #7B8973;
     z-index: 11;
     width: 100vw;
     height: 100vh;
 `
-export const Tagline = styled.h3`
+export const TaglineContainer = styled.div`
+    overflow: hidden;
+`
+export const Tagline = styled.span`
     font-weight: 700;
+    display: inline-block;
     font-size: 53.2921px;
-    color: #8DB77F;
+    color: #949494;
+    transform: translateY(100px)
 `
 export const Highlight = styled.span`
-    color: #949494;
+    color: #8DB77F;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 53.2921px;
+    transform: translateY(100px)
 `
 export const FlexContainer = styled.div`
-    width: 580px;
+    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center
@@ -39,17 +52,19 @@ export const FlexContainer = styled.div`
 export const FlexItem = styled.div`
     width: ${({width})=> width};
     display: flex;
-    justify-content: center;
+    justify-content: ${({justify})=> justify};
     align-items: center;
+    overflow: hidden
 `
 export const Line = styled.div`
-    height: 10px;
-    width: 100%;
+    height: 5px;
+    width: 0%;
     background: #949494;
     border-radius: 55px;
 `
 export const Developer = styled.h4`
     font-weight: 600;
+    transform: translateY(100px);
     font-size: 20px;
     color: #84AA77;
 `

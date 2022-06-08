@@ -4,7 +4,7 @@ export const MainContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #EEF0EB;
+    background: #EDF5E2;
     position: relative;
     width: 100%;
     z-index: 1
@@ -65,7 +65,7 @@ export const Description = styled.h4`
     line-height: 24px;
     @media (max-width: 900px) {
        text-align: center;
-       font-size: 14px;
+       font-size: 14px
     }
   
 `
