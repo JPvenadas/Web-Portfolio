@@ -6,13 +6,17 @@
   color: #494E48;
   box-sizing: border-box;
 }
+::-webkit-scrollbar-thumb{
+  background-color: green;
+}
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  overflow: hidden;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -52,6 +56,9 @@ code {
  animation: wave 1s infinite ease
 }
 
+.app{
+  overflow-x: hidden;
+}
 @keyframes wave {
   15%{
     transform: rotate(20deg) translateX(5px);

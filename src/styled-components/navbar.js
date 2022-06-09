@@ -86,6 +86,8 @@ export const HammenuContainer = styled.div`
     display: none;
     justify-content: center;
     align-items: flex-end;
+    opacity: 0;
+    transform: translateY(-20px);
     height: 100%;
     @media(max-width: 600px) {
         display: flex;

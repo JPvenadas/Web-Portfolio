@@ -34,7 +34,7 @@ const Navbar = () => {
                 </Navlink>
               </Navlinks>
             </NavLinksContainer>
-            <HammenuContainer onClick={()=>{setNavopen(!navopen)}}>
+            <HammenuContainer className="ham" onClick={()=>{setNavopen(!navopen)}}>
               <Hammenu>
                 <div className={`ham-top ${navopen? 'clicked': ''}`}></div>
                 <div className={`ham-mid ${navopen? 'clicked': ''}`}></div>

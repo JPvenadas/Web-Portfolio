@@ -39,10 +39,11 @@ export const NameTitle = styled.h1`
     opacity: 0;
     transform: translateY(20px);
     @media (max-width: 950px) {
-       font-size: 60px;
+       font-size: 50px;
     }
     @media (max-width: 600px) {
-      font-size: 35px;
+      font-size: 30px;
+      text-align: center;
       color: #37562C;
     }
 `
@@ -56,7 +57,8 @@ export const Hobby = styled.h3`
        font-size: 30px;
     }
     @media (max-width: 600px) {
-       font-size: 24px;
+       font-size: 20px;
+       text-align: center;
     }
 `
 export const Highlighted = styled.span`

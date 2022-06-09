@@ -29,9 +29,11 @@ const Intro = () => {
       .to(text1highlight, {y: 0, duration: .8}, '<.3')
       .to(dev, {y: 0, duration: .8}, '<.3')
       .to(slider, {y: '-100%', background: '#4a6a45', duration: .8}, '>.8')
+      .to('body', {overflow: 'initial', duration: 0})
       .to(container, {y: '-200%', duration: .8} )
       .to('.logo', {duration: .4, opacity: 1, y:0}, '<.5')
-      .to('.nav-link', {duration: .4, opacity: 1, y: 0, stagger: .15}, '<.1.5')
+      .to('.ham', {duration: .4, opacity: 1, y:0}, '<.15')
+      .to('.nav-link', {duration: .4, opacity: 1, y: 0, stagger: .15}, '<')
       .to(['.greetings', '.name', '.hobby', '.description'], 
       {duration: .4, opacity: 1, y: 0, stagger: .15})
       .to('.button', {duration: .4, opacity: 1, y: 0}, '<.15')

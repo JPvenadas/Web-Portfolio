@@ -34,20 +34,29 @@ export const Tagline = styled.span`
     display: inline-block;
     font-size: 53.2921px;
     color: #949494;
-    transform: translateY(100px)
+    transform: translateY(100px);
+    @media (max-width: 600px) {
+    font-size: 25px;
+    }
 `
 export const Highlight = styled.span`
     color: #8DB77F;
     display: inline-block;
     font-weight: 700;
     font-size: 53.2921px;
-    transform: translateY(100px)
+    transform: translateY(100px);
+    @media (max-width: 600px) {
+    font-size: 25px;
+    }
 `
 export const FlexContainer = styled.div`
     width: 500px;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    @media (max-width: 600px) {
+    width: 250px;
+    }
 `
 export const FlexItem = styled.div`
     width: ${({width})=> width};
@@ -61,10 +70,16 @@ export const Line = styled.div`
     width: 0%;
     background: #949494;
     border-radius: 55px;
+    @media (max-width: 600px) {
+    height: 3px;
+    }
 `
 export const Developer = styled.h4`
     font-weight: 600;
     transform: translateY(100px);
     font-size: 20px;
     color: #84AA77;
+    @media (max-width: 600px) {
+    font-size: 10px;
+    }
 `
