@@ -8,7 +8,7 @@ export const MainContainer = styled.div`
     left: 0;
     background: #fefefe;
     z-index: 10;
-    overflow: hidden;
+    overflow: clip;
 `
 export const Container = styled.div`
     display: flex;
@@ -19,9 +19,9 @@ export const Container = styled.div`
 `
 export const Slider = styled.div`
     position: absolute;
-    top: 200%;
+    top: 100%;
     left: 0;
-    background: #7B8973;
+    background: #949494;
     z-index: 11;
     width: 100vw;
     height: 100vh;

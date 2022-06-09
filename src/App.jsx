@@ -5,7 +5,7 @@ import Intro from './components/Intro'
 
 const App = () => {
   return (
-    <div>
+    <div className='app'>
       <Navbar/>
       <main>
       <Header/>

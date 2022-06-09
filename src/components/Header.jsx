@@ -16,18 +16,18 @@ const Header = () => {
   return (
     <MainContainer>
         <Container>
-            <Greetings>Hi there I'm</Greetings>
-            <NameTitle>Jayphe Venadas</NameTitle>
-            <Hobby>I <Highlighted>Create</Highlighted> and <Highlighted>Develop</Highlighted> stuffs</Hobby>
-            <Description>
+            <Greetings className='greetings'>Hi there I'm</Greetings>
+            <NameTitle className='name'>Jayphe Venadas</NameTitle>
+            <Hobby className='hobby'>I <Highlighted>Create</Highlighted> and <Highlighted>Develop</Highlighted> stuffs</Hobby>
+            <Description className='description'>
             I am a Software Developer based in the Philippines, I have profound  Interest in Coding especially in Web  Development, and I am always looking forward to learn new things
             </Description>
             <ButtonContainer>
-            <Button 
+            <Button className='button'
             onMouseEnter={()=>{SetButton1hover(true)}}
             onMouseLeave={()=>{SetButton1hover(false)}}
             >{button1hover? <ion-icon class="icon" color="white" name="hand-left"></ion-icon>: ''} Say hello</Button>
-            <Button
+            <Button className='button'
             onMouseEnter={()=>{SetButton2hover(true)}}
             onMouseLeave={()=>{SetButton2hover(false)}}
             >{button2hover? <ion-icon class="icon" color="white" name="document-text"></ion-icon>: ''} My Resume</Button>

@@ -28,8 +28,13 @@ const Intro = () => {
       .to(line, {width: '100%', duration: 1}, '<.1')
       .to(text1highlight, {y: 0, duration: .8}, '<.3')
       .to(dev, {y: 0, duration: .8}, '<.3')
-      .to(slider, {y: '-200%', duration: .8}, '>.8')
+      .to(slider, {y: '-100%', background: '#4a6a45', duration: .8}, '>.8')
       .to(container, {y: '-200%', duration: .8} )
+      .to('.logo', {duration: .4, opacity: 1, y:0}, '<.5')
+      .to('.nav-link', {duration: .4, opacity: 1, y: 0, stagger: .15}, '<.1.5')
+      .to(['.greetings', '.name', '.hobby', '.description'], 
+      {duration: .4, opacity: 1, y: 0, stagger: .15})
+      .to('.button', {duration: .4, opacity: 1, y: 0}, '<.15')
     }, [])
   return (
       <MainContainer ref={el => container = el}>

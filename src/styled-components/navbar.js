@@ -4,7 +4,7 @@ export const MainContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background:#EEF0EB;
+    background:#F5F5F5;
     height: 82px;
     @media (max-width: 600px) {
         height: 60px;
@@ -30,6 +30,8 @@ export const Logo = styled.h2`
     font-weight: 600;
     font-size: 16px;
     color: #64795D;
+    transform: translateY(-20px);
+    opacity: 0;
 `
 export const NavLinksContainer = styled.div`
     display: flex;
@@ -69,6 +71,8 @@ export const Navlink = styled.li`
     font-size: 15px;
     width: 100%;
     transition: .4s ease;
+    transform: translateY(-20px);
+    opacity: 0;
     text-align: center;
     @media (max-width: 600px) {
        color: white;
