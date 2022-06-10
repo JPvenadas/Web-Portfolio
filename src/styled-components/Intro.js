@@ -19,7 +19,7 @@ export const Container = styled.div`
 `
 export const Slider = styled.div`
     position: absolute;
-    top: 100%;
+    top: 200%;
     left: 0;
     background: #949494;
     z-index: 11;

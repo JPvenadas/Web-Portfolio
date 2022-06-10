@@ -6,9 +6,7 @@
   color: #494E48;
   box-sizing: border-box;
 }
-::-webkit-scrollbar-thumb{
-  background-color: green;
-}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
