@@ -24,6 +24,9 @@ const Intro = () => {
 
     const tl = gsap.timeline()
     useEffect(() => {
+      window.onunload = function () {
+        window.scrollTo(0, 0);
+      }
     tl.to(text1, {y: 0, duration: .8})
       .to(line, {width: '100%', duration: 1}, '<.1')
       .to(text1highlight, {y: 0, duration: .8}, '<.3')
