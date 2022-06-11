@@ -17,11 +17,18 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 900px) {
+        height: auto;
+        gap: 0px;
+    }
 `
 export const Grid = styled.div`
      grid-template-columns: 1fr 10px 1fr;
      display: grid;
      gap: 50px;
+     @media (max-width: 900px) {
+         grid-template-columns: 1fr;
+     }
 `
 export const GridItem = styled.div`
     display: flex;
@@ -30,15 +37,26 @@ export const GridItem = styled.div`
     flex-direction: ${({direction})=> direction};
     gap: 25px;
     transform:${({translate})=> translate};
+    @media (max-width: 900px) {
+        display: ${({display})=> display};
+        text-align: center;
+     }
 `
 export const Image = styled.img`
     width: 397px;
     height: 366px;
+    @media (max-width: 900px) {
+       width:300px;
+       height: 270px;
+    }
 `
 export const SectionTitle = styled.h2`
     font-weight: 700;
     font-size: 48px;
     color: #7A8F72;
+    @media (max-width: 900px) {
+       font-size: 30px;
+    }
 
 `
 export const Line = styled.div`
@@ -51,6 +69,10 @@ export const Title = styled.h3`
     font-weight: 400;
     font-size: 36px;
     color: #64795D;
+    width: 100%;
+    @media (max-width: 900px) {
+       font-size: 20px;
+    }
 `
 export const OccupationDescription = styled.p`
     font-weight: 600;
@@ -74,4 +96,10 @@ export const Interest = styled.p`
 export const ButtonContainer = styled.div`
     display: flex;
     gap: 20px;
+    width: 100%;
+    @media (max-width: 900px) {
+      justify-content: center;
+      align-items: center
+    }
+
 `

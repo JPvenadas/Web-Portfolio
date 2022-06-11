@@ -29,7 +29,7 @@ const About = () => {
                       <Image className='untouchable' src={jp}>
                       </Image>
                   </GridItem>
-                  <GridItem direction="column" align='center' justify="center">
+                  <GridItem display="none" direction="column" align='center' justify="center">
                       <Line></Line>
                   </GridItem>
                   <GridItem translate='translateY(-15px)' direction="column" align='flex-start' justify="center">
@@ -37,7 +37,7 @@ const About = () => {
                       <OccupationDescription>
                           I am Jp Venadas a Frontend web developer based in the Philippines. I code beautiful and accessible custom frontend websites in React or even in Vanilla css/js. I am currently pursuing Information Technology in University of Rizal System.  I am looking for more opportunities as a developer and I would be glad to hear something from you.
                       </OccupationDescription>
-                      <div>
+                      <div style={{width: "100%"}}>
                           <Subtitle>
                               Recent Interests
                           </Subtitle>
