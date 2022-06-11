@@ -9,7 +9,7 @@ import { MainContainer,
          ButtonContainer
 } from '../styled-components/Header'
 import { useState } from 'react'
-import { Button } from '../styled-components/Button'
+import { Button } from '../styled-components/styled-objects'
 const Header = () => {
     const [button1hover, SetButton1hover] = useState(false)
     const [button2hover, SetButton2hover] = useState(false)
@@ -23,11 +23,13 @@ const Header = () => {
             I am a Software Developer based in the Philippines, I have profound  Interest in Coding especially in Web  Development, and I am always looking forward to learn new things
             </Description>
             <ButtonContainer>
-            <Button className='button'
+            <Button color1="#456F3E" color2="#ffffff" letter="#456F3E" 
+            opacity="0" translate='translateY(20px)' className='button'
             onMouseEnter={()=>{SetButton1hover(true)}}
             onMouseLeave={()=>{SetButton1hover(false)}}
-            >{button1hover? <ion-icon class="icon" color="white" name="hand-left"></ion-icon>: ''} Say hello</Button>
-            <Button className='button'
+            >{button1hover? <ion-icon class="icon" color="white" letter="#456F3E"  
+            name="hand-left"></ion-icon>: ''} Say hello</Button>
+            <Button color1="#456F3E" color2="#ffffff" opacity="0" translate='translateY(20px)' className='button'
             onMouseEnter={()=>{SetButton2hover(true)}}
             onMouseLeave={()=>{SetButton2hover(false)}}
             >{button2hover? <ion-icon class="icon" color="white" name="document-text"></ion-icon>: ''} My Resume</Button>
