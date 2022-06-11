@@ -20,6 +20,7 @@ export const Container = styled.div`
     @media (max-width: 900px) {
         height: auto;
         gap: 0px;
+        padding: 40px 0;
     }
 `
 export const Grid = styled.div`
@@ -40,6 +41,7 @@ export const GridItem = styled.div`
     @media (max-width: 900px) {
         display: ${({display})=> display};
         text-align: center;
+        gap: 10px;
      }
 `
 export const Image = styled.img`
@@ -71,7 +73,7 @@ export const Title = styled.h3`
     color: #64795D;
     width: 100%;
     @media (max-width: 900px) {
-       font-size: 20px;
+       font-size: 26px;
     }
 `
 export const OccupationDescription = styled.p`

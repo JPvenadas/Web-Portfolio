@@ -23,7 +23,7 @@ const About = () => {
     <MainContainer>
           <Container>
           <TransparentTitle className='untouchable'>About</TransparentTitle>
-              <SectionTitle>About</SectionTitle>
+              <SectionTitle>About.</SectionTitle>
               <Grid>
                   <GridItem direction="column" align='center' justify="flex-end">
                       <Image className='untouchable' src={jp}>
