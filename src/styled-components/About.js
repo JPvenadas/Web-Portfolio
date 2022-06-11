@@ -37,6 +37,7 @@ export const GridItem = styled.div`
     align-items: ${({align})=> align};;
     flex-direction: ${({direction})=> direction};
     gap: 25px;
+    opacity: 0;
     transform:${({translate})=> translate};
     @media (max-width: 900px) {
         display: ${({display})=> display};
@@ -56,6 +57,8 @@ export const SectionTitle = styled.h2`
     font-weight: 700;
     font-size: 48px;
     color: #7A8F72;
+    opacity: 0;
+    transform: translateY(20px);
     @media (max-width: 900px) {
        font-size: 30px;
     }
@@ -82,6 +85,9 @@ export const OccupationDescription = styled.p`
     color: #5C6759;
     max-width: 455px;
     line-height: 23px;
+    @media (max-width: 900px) {
+        max-width: 600px;
+    }
 `
 export const Subtitle = styled.h4`
     font-weight: 400;
@@ -94,6 +100,9 @@ export const Interest = styled.p`
     line-height: 20px;
     color: #5C6759;
     max-width: 430px;
+    @media (max-width: 900px) {
+        max-width: 600px;
+    }
 `
 export const ButtonContainer = styled.div`
     display: flex;

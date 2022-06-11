@@ -22,17 +22,17 @@ const About = () => {
   return (
     <MainContainer>
           <Container>
-          <TransparentTitle className='untouchable'>About</TransparentTitle>
-              <SectionTitle>About.</SectionTitle>
+          <TransparentTitle className='about-transparent untouchable'>About</TransparentTitle>
+              <SectionTitle className='about'>About.</SectionTitle>
               <Grid>
-                  <GridItem direction="column" align='center' justify="flex-end">
+                  <GridItem className='about-left' translate='translate(-60px)' direction="column" align='center' justify="flex-end">
                       <Image className='untouchable' src={jp}>
                       </Image>
                   </GridItem>
-                  <GridItem display="none" direction="column" align='center' justify="center">
-                      <Line></Line>
+                  <GridItem className='line' display="none" translate='translateY(60px)' direction="column" align='center' justify="center">
+                      <Line ></Line>
                   </GridItem>
-                  <GridItem translate='translateY(-15px)' direction="column" align='flex-start' justify="center">
+                  <GridItem className='about-right' translate='translate(60px,-15px)' direction="column" align='flex-start' justify="center">
                       <Title>What do I do</Title>
                       <OccupationDescription>
                           I am Jp Venadas a Frontend web developer based in the Philippines. I code beautiful and accessible custom frontend websites in React or even in Vanilla css/js. I am currently pursuing Information Technology in University of Rizal System.  I am looking for more opportunities as a developer and I would be glad to hear something from you.

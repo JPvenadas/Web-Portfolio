@@ -29,7 +29,8 @@ const Header = () => {
             onMouseLeave={()=>{SetButton1hover(false)}}
             >{button1hover? <ion-icon class="icon" color="white" letter="#456F3E"  
             name="hand-left"></ion-icon>: ''} Say hello</Button>
-            <Button color1="#456F3E" color2="#ffffff" opacity="0" translate='translateY(20px)' className='button'
+            <Button color1="#456F3E" color2="#ffffff"
+            letter="#456F3E" opacity="0" translate='translateY(20px)' className='button'
             onMouseEnter={()=>{SetButton2hover(true)}}
             onMouseLeave={()=>{SetButton2hover(false)}}
             >{button2hover? <ion-icon class="icon" color="white" name="document-text"></ion-icon>: ''} My Resume</Button>

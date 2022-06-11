@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
-import Intro from './components/Intro'
+import Intro from './components/Animation'
 import About from './components/About'
 
 const App = () => {

@@ -64,6 +64,7 @@ code {
 .app{
   overflow-x: hidden;
 }
+
 @keyframes wave {
   15%{
     transform: rotate(20deg) translateX(5px);
