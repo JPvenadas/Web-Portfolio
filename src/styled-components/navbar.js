@@ -39,7 +39,7 @@ export const NavLinksContainer = styled.div`
     transition: .4s ease;
     height: 100%;
     @media (max-width: 600px) {
-        position: absolute;
+        position: fixed;
         top: 60px;
         right: ${({right})=>right};
         width: 200px;

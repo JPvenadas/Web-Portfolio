@@ -62,7 +62,8 @@ code {
   -ms-user-select: none;
 }
 .app{
-  overflow-x: hidden;
+  overflow: hidden;
+  width: 100vw;
 }
 
 @keyframes wave {

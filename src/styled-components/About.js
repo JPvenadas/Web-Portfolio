@@ -42,7 +42,7 @@ export const GridItem = styled.div`
     @media (max-width: 900px) {
         display: ${({display})=> display};
         text-align: center;
-        gap: 10px;
+        gap: 20px;
      }
 `
 export const Image = styled.img`
@@ -88,6 +88,10 @@ export const OccupationDescription = styled.p`
     @media (max-width: 900px) {
         max-width: 600px;
     }
+    @media (max-width: 600px) {
+        width: 100%;
+        padding: 0 30px;
+    }
 `
 export const Subtitle = styled.h4`
     font-weight: 400;
@@ -103,6 +107,11 @@ export const Interest = styled.p`
     @media (max-width: 900px) {
         max-width: 600px;
     }
+    @media (max-width: 600px) {
+        width: 100%;
+        padding: 0 30px;
+    }
+
 `
 export const ButtonContainer = styled.div`
     display: flex;
@@ -111,6 +120,9 @@ export const ButtonContainer = styled.div`
     @media (max-width: 900px) {
       justify-content: center;
       align-items: center
+    }
+    @media (max-width: 600px) {
+      flex-direction: column;
     }
 
 `

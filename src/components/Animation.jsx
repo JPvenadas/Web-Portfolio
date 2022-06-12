@@ -26,7 +26,7 @@ const Intro = () => {
     const introTimeline = gsap.timeline()
     const AboutTimeline = gsap.timeline({scrollTrigger: {
       trigger: '.about',
-      start: '400'
+      start: 'center center'
     }})
 
     useEffect(() => {
@@ -39,7 +39,7 @@ const Intro = () => {
                  .to(text1highlight, {y: 0, duration: .8}, '<.3')
                  .to(dev, {y: 0, duration: .8}, '<.3')
                  .to(slider, {y: '-200%', background: '#4a6a45', duration: .8}, '>.8')
-                 .to('body', {overflow: 'initial', duration: 0})
+                 .to('body', {overflowY: 'initial', duration: 0})
                  .to(container, {y: '-200%', duration: .8} )
                  .to('.logo', {duration: .4, opacity: 1, y:0}, '<.3')
                  .to('.ham', {duration: .4, opacity: 1, y:0}, '<.15')
