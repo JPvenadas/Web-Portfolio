@@ -1,4 +1,4 @@
-import {gsap} from 'gsap'
+import {gsap, Power2} from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import React, {useRef, useEffect} from 'react'
 import { MainContainer, 
@@ -26,7 +26,7 @@ const Intro = () => {
     const introTimeline = gsap.timeline()
     const AboutTimeline = gsap.timeline({scrollTrigger: {
       trigger: '.about',
-      start: 'center center'
+      start: '30% 30%'
     }})
 
     useEffect(() => {
@@ -39,8 +39,8 @@ const Intro = () => {
                  .to(text1highlight, {y: 0, duration: .8}, '<.3')
                  .to(dev, {y: 0, duration: .8}, '<.3')
                  .to(slider, {y: '-200%', background: '#4a6a45', duration: .8}, '>.8')
-                 .to('body', {overflowY: 'initial', duration: 0})
                  .to(container, {y: '-200%', duration: .8} )
+                 .to('body', {overflowY: 'initial', duration: 0})
                  .to('.logo', {duration: .4, opacity: 1, y:0}, '<.3')
                  .to('.ham', {duration: .4, opacity: 1, y:0}, '<.15')
                  .to('.nav-link', {duration: .4, opacity: 1, y: 0, stagger: .15}, '<')
@@ -51,7 +51,7 @@ const Intro = () => {
       //about timeline
       AboutTimeline.to(['.about', '.line'], {y: 0, opacity: 1, duration: 1})
                    .to('.about-transparent', {top: '-60px', duration: 4}, '<')
-                   .to(['.about-left', '.about-right'], {x:0, duration: 1, opacity: 1}, '<')
+                   .to(['.about-left', '.about-right'], {x:0,duration: 1, opacity: 1}, '<')
     }, [])
 
     

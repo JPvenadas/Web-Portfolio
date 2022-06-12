@@ -3,6 +3,8 @@ import Navbar from './components/Navbar'
 import Header from './components/Header'
 import Intro from './components/Animation'
 import About from './components/About'
+import Skills from './components/Skills'
+
 
 const App = () => {
   return (
@@ -13,6 +15,7 @@ const App = () => {
       </header>
       <main>
         <About/>
+        <Skills/>
       </main>
       <Intro/>
     </div>

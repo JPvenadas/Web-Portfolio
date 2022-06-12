@@ -34,11 +34,11 @@ export const Greetings = styled.p`
 `
 export const NameTitle = styled.h1`
     font-weight: 700;
-    font-size: 96px;
+    font-size: 93px;
     color: #638D55;
     opacity: 0;
     transform: translateY(20px);
-    @media (max-width: 950px) {
+    @media (max-width: 900px) {
        font-size: 50px;
     }
     @media (max-width: 600px) {
