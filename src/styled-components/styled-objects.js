@@ -33,4 +33,7 @@ export const TransparentTitle = styled.h3`
     color: rgba(117, 247, 72, 0.1);
     top: 100px;
     left: -50px;
+    @media (max-width: 600px) {
+       display: none;
+    }
 `

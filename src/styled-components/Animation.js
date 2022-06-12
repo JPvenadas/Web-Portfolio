@@ -11,6 +11,8 @@ export const MainContainer = styled.div`
     overflow: clip;
 `
 export const Container = styled.div`
+    position: relative;
+    top: -10vh;
     display: flex;
     justify-content: center;
     align-items: center;

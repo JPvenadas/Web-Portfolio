@@ -9,8 +9,8 @@ const Skills = () => {
   return (
     <MainContainer>
         <Container>
-            <TransparentTitle>Skills</TransparentTitle>
-            <SectionTitle>My Tech Stacks</SectionTitle>
+            <TransparentTitle className='untouchable TransparentSkill'>Skills</TransparentTitle>
+            <SectionTitle className='skill'>My Tech Stacks</SectionTitle>
             <SkillsGrid/>
         </Container>
     </MainContainer>

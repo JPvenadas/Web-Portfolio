@@ -23,14 +23,14 @@ const SkillsGrid = () => {
         <Techstack Img={css} tech="CSS"></Techstack>
         <Techstack Img={js} tech="Javascript"></Techstack>
         <Techstack Img={figma} tech="Figma"></Techstack>
-        <Techstack Img={bootstrap} tech="CSS"></Techstack>
-        <Techstack Img={mui} tech="HTML"></Techstack>
-        <Techstack Img={git} tech="CSS"></Techstack>
-        <Techstack Img={github} tech="CSS"></Techstack>
+        <Techstack Img={bootstrap} tech="Bootstrap"></Techstack>
+        <Techstack Img={mui} tech="Material UI"></Techstack>
+        <Techstack Img={git} tech="Git"></Techstack>
+        <Techstack Img={github} tech="Github"></Techstack>
         <Techstack Img={react} tech="React/ native"></Techstack>
         <Techstack Img={Scomp} tech="Styled comp."></Techstack>
-        <Techstack Img={php} tech="CSS"></Techstack>
-        <Techstack Img={mysql} tech="CSS"></Techstack>
+        <Techstack Img={php} tech="PHP"></Techstack>
+        <Techstack Img={mysql} tech="Mysql"></Techstack>
     </Grid>
   )
 }

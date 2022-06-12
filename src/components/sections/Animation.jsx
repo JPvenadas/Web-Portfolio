@@ -11,7 +11,7 @@ import { MainContainer,
          Line,
          Developer,
          TaglineContainer
- } from '../../styled-components/Intro'   
+ } from '../../styled-components/Animation'   
  gsap.registerPlugin(ScrollTrigger)
 
 const Intro = () => {
@@ -27,6 +27,10 @@ const Intro = () => {
     const AboutTimeline = gsap.timeline({scrollTrigger: {
       trigger: '.about',
       start: '30% 30%'
+    }})
+    const SkillsTimeline = gsap.timeline({scrollTrigger: {
+      trigger: '.skill',
+      start: 'center'
     }})
 
     useEffect(() => {
@@ -50,8 +54,14 @@ const Intro = () => {
 
       //about timeline
       AboutTimeline.to(['.about', '.line'], {y: 0, opacity: 1, duration: 1})
-                   .to('.about-transparent', {top: '-60px', duration: 4}, '<')
+                   .to('.about-transparent', {top: '-60px', duration: 2}, '<')
                    .to(['.about-left', '.about-right'], {x:0,duration: 1, opacity: 1}, '<')
+
+      //skills timeline
+      gsap.to('.TransparentSkill', {top: '-60px', duration: 2, scrollTrigger: {trigger: '.Skill', start: 'center'}}, '<')
+      SkillsTimeline.to('.skill', {y: 0, opacity: 1, duration: 1})
+                    .to('.skills', {y: 0, opacity: 1, duration: .4, stagger: .1}, '<')
+                    .to('.skill-names', { opacity: 1, duration: .6})
     }, [])
 
     
