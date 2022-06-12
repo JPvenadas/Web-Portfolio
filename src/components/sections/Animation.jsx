@@ -11,7 +11,7 @@ import { MainContainer,
          Line,
          Developer,
          TaglineContainer
- } from '../styled-components/Intro'   
+ } from '../../styled-components/Intro'   
  gsap.registerPlugin(ScrollTrigger)
 
 const Intro = () => {

@@ -11,10 +11,10 @@ import { MainContainer,
          Subtitle,
          Interest,
          ButtonContainer,
-} from '../styled-components/About'
-import jp from './../Images/Jp.png'
-import { Button } from '../styled-components/styled-objects'
-import { TransparentTitle } from '../styled-components/styled-objects'
+} from '../../styled-components/About'
+import jp from './../../Images/Jp.png'
+import { Button } from '../../styled-components/styled-objects'
+import { TransparentTitle } from '../../styled-components/styled-objects'
 
 const About = () => {
     const [button1hover, SetButton1hover] = useState(false)

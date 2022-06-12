@@ -7,9 +7,9 @@ import { MainContainer,
          Highlighted,
          Description,
          ButtonContainer
-} from '../styled-components/Header'
+} from '../../styled-components/Header'
 import { useState } from 'react'
-import { Button } from '../styled-components/styled-objects'
+import { Button } from '../../styled-components/styled-objects'
 const Header = () => {
     const [button1hover, SetButton1hover] = useState(false)
     const [button2hover, SetButton2hover] = useState(false)

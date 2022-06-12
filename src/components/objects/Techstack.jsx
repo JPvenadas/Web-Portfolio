@@ -1,8 +1,8 @@
 import React from 'react'
-import { GridItem, Image, SkillTitle } from '../styled-components/About'
+import { GridItem, Image, SkillTitle } from '../../styled-components/Skills'
 
 
-const techstack = ({Img, tech}) => {
+const Techstack = ({Img, tech}) => {
   return (
    <GridItem>
        <Image src={Img}></Image>
@@ -11,4 +11,4 @@ const techstack = ({Img, tech}) => {
   )
 }
 
-export default techstack
+export default Techstack

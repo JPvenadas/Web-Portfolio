@@ -21,6 +21,8 @@ export const Container = styled.div`
 export const SectionTitle = styled.h2`
     font-weight: 700;
     font-size: 48px;
+    position: relative;
+    top: -60px;
     color: #7A8F72;
     @media (max-width: 900px) {
        font-size: 30px;
@@ -29,7 +31,7 @@ export const SectionTitle = styled.h2`
 `
 export const Grid = styled.div`
     display: grid;
-    grid-template-columns: repeat(5, 140px);
+    grid-template-columns: repeat(6, 140px);
     grid-template-rows: repeat(2, 140px)
 `
 export const GridItem = styled.div`
@@ -38,7 +40,7 @@ export const GridItem = styled.div`
     height: 100%;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 4px;
     flex-direction: column;
 `
 export const Image = styled.img`

@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import Header from './components/Header'
-import Intro from './components/Animation'
-import About from './components/About'
-import Skills from './components/Skills'
+import Navbar from './components/sections/Navbar'
+import Header from './components/sections/Header'
+import Intro from './components/sections/Animation'
+import About from './components/sections/About'
+import Skills from './components/sections/Skills'
 
 
 const App = () => {

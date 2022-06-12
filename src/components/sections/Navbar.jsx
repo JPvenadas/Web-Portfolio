@@ -7,7 +7,7 @@ import { Container,
         Navlink,
         HammenuContainer,
         Hammenu,
- } from "../styled-components/navbar"
+ } from "../../styled-components/navbar"
  import { useState } from "react"
 
 const Navbar = () => {
