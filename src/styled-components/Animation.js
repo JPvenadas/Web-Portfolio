@@ -12,12 +12,14 @@ export const MainContainer = styled.div`
 `
 export const Container = styled.div`
     position: relative;
-    top: -10vh;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     flex-direction: column;
+    @media (max-width: 900px) {
+        top: -10vh;
+    }
 `
 export const Slider = styled.div`
     position: absolute;
