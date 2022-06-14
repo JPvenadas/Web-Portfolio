@@ -7,10 +7,12 @@ import {
     DescriptionSection,
     DescriptionContainer,
     DescriptionTitle,
-    DescriptionText
+    DescriptionText,
+    StackSection,
+    Stack
 } from "../../styled-components/Projects"
 
-const ProjectItem = ({bg, title, description, buttons}) => {
+const ProjectItem = ({bg, title, description, buttons, Stacks}) => {
   return (
    <Project>
         <Preview background={bg}>
@@ -26,6 +28,11 @@ const ProjectItem = ({bg, title, description, buttons}) => {
                     <DescriptionText>{description}</DescriptionText>
                 </DescriptionContainer>
             </DescriptionSection>
+            <StackSection>
+                 {Stacks.map(stack => (
+                    <Stack>{stack}</Stack>
+                 ))}
+            </StackSection>
         </Preview>
    </Project>
   )

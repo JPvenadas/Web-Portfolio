@@ -17,24 +17,28 @@ const ProjectGrid = () => {
          title="Web Portfolioo"
          description="A simple and minimalist Web Portfolio to showcase my projects and my skills as a developer and a designer. I Created it with Figma, React and fancy Greensock Animations"
          buttons={[{img: github},{img: web}]}
+         Stacks={["React", "Figma", "Styled-components", "GSAP"]}
         />
         <ProjectItem
          bg={portfolio}
          title="Web Portfolioo"
          description="A simple and minimalist Web Portfolio to showcase my projects and my skills as a developer and a designer. I Created it with Figma, React and fancy Greensock Animations"
          buttons={[{img: github},{img: web}]}
+         Stacks={["React", "Figma", "Styled-components", "GSAP"]}
         />
          <ProjectItem
          bg={portfolio}
          title="Web Portfolioo"
          description="A simple and minimalist Web Portfolio to showcase my projects and my skills as a developer and a designer. I Created it with Figma, React and fancy Greensock Animations"
          buttons={[{img: github},{img: web}]}
+         Stacks={["React", "Figma", "Styled-components", "GSAP"]}
         />
          <ProjectItem
          bg={portfolio}
          title="Web Portfolioo"
          description="A simple and minimalist Web Portfolio to showcase my projects and my skills as a developer and a designer. I Created it with Figma, React and fancy Greensock Animations"
          buttons={[{img: github},{img: web}]}
+         Stacks={["React", "Figma", "Styled-components", "GSAP"]}
         />
     </Grid>
   )

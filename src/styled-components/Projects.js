@@ -9,6 +9,7 @@ export const MainContainer = styled.div`
 export const Container = styled.div`
     width: 1200px;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -26,7 +27,7 @@ export const Grid = styled.div`
     width: 900px;
     display: grid;
     grid-template-columns: repeat(2, calc(50% - 60px));
-    gap: 90px;
+    gap: 60px 90px;
     padding: 0 30px;
 `
 export const Project = styled.div`
@@ -73,7 +74,7 @@ export const DescriptionContainer = styled.div`
     padding: 30px 0 15px 0;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
 `
 export const DescriptionTitle = styled.h4`
@@ -85,4 +86,20 @@ export const DescriptionText = styled.p`
     font-weight: 600;
     font-size: 12px;
     color: #646464;
+`
+export const StackSection = styled.div`
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    padding: 0 20px;
+    background: rgba(127, 150, 123, .28);
+`
+export const Stack = styled.div`
+    font-weight: 600;
+    font-size: 8px;
+    color: white;
+    background: #456E3E;
+    padding: 3px 12px;
 `
