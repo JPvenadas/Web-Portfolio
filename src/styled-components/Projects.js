@@ -24,41 +24,53 @@ export const SectionTitle = styled.h2`
     }
 `
 export const Grid = styled.div`
-    width: 900px;
     display: grid;
     grid-template-columns: repeat(2, calc(50% - 60px));
     gap: 60px 90px;
     padding: 0 30px;
+    position: relative;
+    z-index: 8
 `
 export const Project = styled.div`
     display: flex; 
     height: 440px;
     width: 380px;
     flex-direction: column;
+    box-shadow: 10px 10px 10px #efefef;
 `
 export const Preview = styled.div`
     width: 100%;
     height: 220px;
     background: url(${({background})=>background});
     background-size: 100% 100%;
-`
-export const Shade = styled.div`
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.2);
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    overflow: hidden;
+`
+export const Shade = styled.div`
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: ${({opacity})=>opacity};
+    transition: 1s ease;
+    background: rgba(0,0,0,0.5);
 `
 export const CircularButton = styled.div`
     border-radius: 100%;
     width: 70px;
+    position: relative;
+    z-index: 3;
     height: 70px;
     background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateY(200px)
 `
 export const ButtonIcon = styled.img`
     width: 30px;

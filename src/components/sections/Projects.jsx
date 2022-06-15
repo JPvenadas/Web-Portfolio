@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <MainContainer>
         <Container>
-            <TransparentTitle>Works</TransparentTitle>
+            <TransparentTitle className='untouchable'>Works</TransparentTitle>
             <SectionTitle>Projects</SectionTitle>
             <ProjectGrid/>
         </Container>
