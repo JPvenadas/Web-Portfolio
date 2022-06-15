@@ -86,6 +86,7 @@ export const DescriptionContainer = styled.div`
     padding: 30px 0 15px 0;
     display: flex;
     flex-direction: column;
+    position: relative;
     gap: 10px;
     justify-content: center;
 `
@@ -114,4 +115,13 @@ export const Stack = styled.div`
     color: white;
     background: #456E3E;
     padding: 3px 12px;
+`
+export const TransparentProjectTitle = styled.p`
+    font-weight: 700;
+    position: absolute;
+    top: 8px;
+    left: 50px;
+    font-size: 36px;
+    color: rgba(117, 247, 72, 0.22);
+
 `

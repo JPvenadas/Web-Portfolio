@@ -9,7 +9,8 @@ import {
     DescriptionTitle,
     DescriptionText,
     StackSection,
-    Stack
+    Stack,
+    TransparentProjectTitle
 } from "../../styled-components/Projects"
 import { useState, useRef } from "react"
 import gsap from "gsap";
@@ -20,7 +21,7 @@ const ProjectItem = ({bg, title, description, buttons, Stacks}) => {
 
     const buttonSpawn = (e) => {
         if (!hoverState){
-            let tl = gsap.to(circularButton.current, {duration: 1.3, ease: 'bounce', y: 0, stagger: .2, overwrite: true})
+            let tl = gsap.to(circularButton.current, {duration: 1.3, ease: 'expo', y: 0, stagger: .2, overwrite: true})
             if(tl.isActive()){
                 e.preventDefault(); // this will also stop <a> tag links
             }
@@ -42,6 +43,7 @@ const ProjectItem = ({bg, title, description, buttons, Stacks}) => {
          
           <DescriptionSection>
               <DescriptionContainer>
+                  <TransparentProjectTitle>{title}</TransparentProjectTitle>
                   <DescriptionTitle>{title}</DescriptionTitle>
                   <DescriptionText>{description}</DescriptionText>
               </DescriptionContainer>
