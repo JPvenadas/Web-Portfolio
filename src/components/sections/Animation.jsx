@@ -53,6 +53,15 @@ const Intro = () => {
       gsap.to('.skill', {y: 0, opacity: 1, duration: 1, scrollTrigger: '.skill'})
       gsap.to('.skills', {y: 0, opacity: 1, duration: .4, stagger: .1, scrollTrigger: '.skills'})
       gsap.to('.skill-names', { opacity: 1, duration: .6, delay: 1.2, scrollTrigger: '.skill-names'})
+
+      //project timeline
+      const projects = gsap.utils.toArray('.project')
+      projects.forEach(project => 
+        gsap.to(project, {y: 0, duration: 1.5, opacity: 1, scrollTrigger: {
+          trigger: project,
+          start: 'top 80%'
+        }})
+      )
     }, [])
 
     

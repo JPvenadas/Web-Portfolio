@@ -26,11 +26,11 @@ const ProjectItem = ({bg, title, description, buttons, Stacks}) => {
                 e.preventDefault(); // this will also stop <a> tag links
             }
         }else{
-            gsap.to(circularButton.current, {duration: .5, ease: 'bounce', y: 200, stagger: .2, overwrite: true});
+            gsap.to(circularButton.current, {duration: .5, ease: 'expo', y: 200, stagger: .2, overwrite: true});
         }
     }
   return (
-   <Project 
+   <Project className="project"
    onMouseEnter={(e)=>{setHoverState(true); buttonSpawn(e)}}
    onMouseLeave={(e)=>{setHoverState(false); buttonSpawn(e)}}>
           <Preview background={bg}>
@@ -43,7 +43,7 @@ const ProjectItem = ({bg, title, description, buttons, Stacks}) => {
          
           <DescriptionSection>
               <DescriptionContainer>
-                  <TransparentProjectTitle>{title}</TransparentProjectTitle>
+                  <TransparentProjectTitle className="untouchable">{title}</TransparentProjectTitle>
                   <DescriptionTitle>{title}</DescriptionTitle>
                   <DescriptionText>{description}</DescriptionText>
               </DescriptionContainer>

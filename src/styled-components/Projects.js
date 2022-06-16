@@ -14,6 +14,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     padding: 120px 0;
+    gap: 65px;
 `
 export const SectionTitle = styled.h2`
     font-weight: 700;
@@ -36,6 +37,8 @@ export const Project = styled.div`
     height: 440px;
     width: 380px;
     flex-direction: column;
+    opacity: 0;
+    transform: translateY(50px);
     box-shadow: 10px 10px 10px #efefef;
 `
 export const Preview = styled.div`
@@ -123,5 +126,4 @@ export const TransparentProjectTitle = styled.p`
     left: 50px;
     font-size: 36px;
     color: rgba(117, 247, 72, 0.22);
-
 `
