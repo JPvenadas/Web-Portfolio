@@ -21,12 +21,12 @@ const ProjectItem = ({bg, title, description, buttons, Stacks}) => {
 
     const buttonSpawn = (e) => {
         if (!hoverState){
-            let tl = gsap.to(circularButton.current, {duration: 1.3, ease: 'expo', y: 0, stagger: .2, overwrite: true})
+            let tl = gsap.to(circularButton.current, {duration: .7,  delay: .5, ease: 'expo', y: 0, stagger: .2, overwrite: true})
             if(tl.isActive()){
                 e.preventDefault(); // this will also stop <a> tag links
             }
         }else{
-            gsap.to(circularButton.current, {duration: .5, ease: 'expo', y: 200, stagger: .2, overwrite: true});
+            gsap.to(circularButton.current, {duration: .5, y: 200, stagger: .2, overwrite: true});
         }
     }
   return (

@@ -38,7 +38,7 @@ const Intro = () => {
                  .to('body', {overflowY: 'initial', duration: 0}, '<')
                  .to('.logo', {duration: .4, opacity: 1, y:0}, '<.3')
                  .to('.ham', {duration: .4, opacity: 1, y:0}, '<.15')
-                 .to('.nav-link', {duration: .4, opacity: 1, y: 0, stagger: .08}, '<')
+                 .to('.nav-link', {duration: .2, opacity: 1, y: 0, stagger: .1}, '<')
                  .to(['.greetings', '.name', '.hobby', '.description'], 
                     {duration: .4, opacity: 1, y: 0, stagger: .15})
                  .to('.button', {duration: .4, opacity: 1, y: 0}, '<.15')
@@ -55,12 +55,13 @@ const Intro = () => {
       gsap.to('.skill-names', { opacity: 1, duration: .6, delay: 1.2, scrollTrigger: '.skill-names'})
 
       //project timeline
+      gsap.to('.TransparentWorks', {top: '-60px', duration: 2, scrollTrigger: '.TransparentWorks'})
       const projects = gsap.utils.toArray('.project')
       projects.forEach(project => 
-        gsap.to(project, {y: 0, duration: 1.5, opacity: 1, scrollTrigger: {
+        gsap.to(project, {y: 0, duration: .7, opacity: 1, scrollTrigger: {
           trigger: project,
           start: 'top 80%'
-        }})
+      }})
       )
     }, [])
 

@@ -6,6 +6,7 @@ export const MainContainer = styled.div`
     align-items: center;
     background: #F5F5F5;
     position: relative;
+    padding: 82px;
     width: 100%;
     z-index: 1
 `

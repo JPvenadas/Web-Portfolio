@@ -4,7 +4,12 @@ export const MainContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background:#F5F5F5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background:rgba(245,245,245,0.9);
     height: 82px;
     @media (max-width: 600px) {
         height: 60px;
@@ -19,15 +24,13 @@ export const Container = styled.nav`
     align-items: center
 `
 export const LogoContainer = styled.div`
-    height: 100%;
     display: flex;
-    align-items: flex-end;
     @media (max-width: 600px) {
         align-items: center
     }
 `
 export const Logo = styled.h2`
-    font-weight: 600;
+    font-weight: 800;
     font-size: 16px;
     color: #64795D;
     transform: translateY(-20px);
@@ -37,7 +40,6 @@ export const NavLinksContainer = styled.div`
     display: flex;
     justify-content: center;
     transition: .4s ease;
-    height: 100%;
     @media (max-width: 600px) {
         position: fixed;
         top: 60px;
@@ -54,7 +56,6 @@ export const Navlinks = styled.ul`
     justify-content: center;
     transition: .8s ease;
     gap: 40px;
-    align-items: flex-end;
     @media (max-width: 600px) {
         height: 100%;
         width: 200px;
@@ -71,6 +72,7 @@ export const Navlink = styled.li`
     font-size: 15px;
     width: 100%;
     transition: .4s ease;
+    font-weight: 600;
     transform: translateY(-20px);
     opacity: 0;
     text-align: center;

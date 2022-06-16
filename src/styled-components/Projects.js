@@ -60,7 +60,7 @@ export const Shade = styled.div`
     top: 0;
     left: 0;
     opacity: ${({opacity})=>opacity};
-    transition: 1s ease;
+    transition: 1.3s ease;
     background: rgba(0,0,0,0.5);
 `
 export const CircularButton = styled.div`
