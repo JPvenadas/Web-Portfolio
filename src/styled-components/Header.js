@@ -6,7 +6,7 @@ export const MainContainer = styled.div`
     align-items: center;
     background: #F5F5F5;
     position: relative;
-    padding: 82px;
+    padding-top: 82px;
     width: 100%;
     z-index: 1
 `
@@ -21,7 +21,7 @@ export const Container = styled.div`
         align-items: center
     }
     @media (max-width: 600px) {
-        height: calc(100vh - 80px)
+        height: calc(100vh - 160px)
     }
 `
 export const Greetings = styled.p`

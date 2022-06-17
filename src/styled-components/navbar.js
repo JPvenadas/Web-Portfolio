@@ -9,7 +9,8 @@ export const MainContainer = styled.div`
     left: 0;
     right: 0;
     z-index: 10;
-    background:rgba(245,245,245,0.9);
+    background:rgba(245,245,245,0.8);
+    backdrop-filter: blur(10px);
     height: 82px;
     @media (max-width: 600px) {
         height: 60px;
@@ -90,7 +91,6 @@ export const HammenuContainer = styled.div`
     align-items: flex-end;
     opacity: 0;
     transform: translateY(-20px);
-    height: 100%;
     @media(max-width: 600px) {
         display: flex;
         align-items: center

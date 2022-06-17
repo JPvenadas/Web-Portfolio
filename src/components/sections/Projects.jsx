@@ -3,7 +3,6 @@ import {
     MainContainer,
     Container,
     SectionTitle,
-    Grid
 
 } from '../../styled-components/Projects'
 import { TransparentTitle } from '../../styled-components/styled-objects'

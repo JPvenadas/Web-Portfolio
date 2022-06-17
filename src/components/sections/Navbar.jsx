@@ -9,11 +9,25 @@ import { Container,
         Hammenu,
  } from "../../styled-components/navbar"
  import { useState } from "react"
+ import gsap from "gsap"
 
 const Navbar = () => {
   const [navopen, setNavopen] = useState(false)
+
+  window.onscroll = function(e) {
+    // scrolling up
+    if(this.oldScroll > this.scrollY){
+      gsap.to('.navbar', {top: 0, duration: .2, overwrite: true})
+    // scrolling down
+    } else {
+      gsap.to('.navbar', {top: -100, duration: .2, overwrite: true})
+    }
+    this.oldScroll = this.scrollY;
+    delete window.onscroll
+ };
+
   return (
-    <MainContainer>
+    <MainContainer className="navbar">
       <Container>
             <LogoContainer>
               <Logo className="logo">Jp Venadas.</Logo>
@@ -34,7 +48,10 @@ const Navbar = () => {
                 </Navlink>
               </Navlinks>
             </NavLinksContainer>
-            <HammenuContainer className="ham" onClick={()=>{setNavopen(!navopen)}}>
+            <HammenuContainer className="ham" onClick={()=>{
+              setNavopen(!navopen)
+              !navopen? gsap.to('body', {overflow: 'hidden'}): gsap.to('body', {overflow: 'initial'})
+              }}>
               <Hammenu>
                 <div className={`ham-top ${navopen? 'clicked': ''}`}></div>
                 <div className={`ham-mid ${navopen? 'clicked': ''}`}></div>
