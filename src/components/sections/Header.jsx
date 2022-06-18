@@ -14,7 +14,7 @@ const Header = () => {
     const [button1hover, SetButton1hover] = useState(false)
     const [button2hover, SetButton2hover] = useState(false)
   return (
-    <MainContainer>
+    <MainContainer id="home">
         <Container>
             <Greetings className='greetings'>Hi there I'm</Greetings>
             <NameTitle className='name'>Jayphe Venadas</NameTitle>

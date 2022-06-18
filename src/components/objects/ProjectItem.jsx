@@ -35,9 +35,11 @@ const ProjectItem = ({bg, title, description, buttons, Stacks}) => {
    onMouseLeave={(e)=>{setHoverState(false); buttonSpawn(e)}}>
           <Preview background={bg}>
               {buttons.map((button, i) => (
-                  <CircularButton ref={el => circularButton.current[i] = el}>
+                 <a target="_blank" rel="noreferrer"  href={button.link}>
+                  <CircularButton className={button.disabled? "disabled": ""}  ref={el => circularButton.current[i] = el}>
                       <ButtonIcon src={button.img}></ButtonIcon>
-                  </CircularButton>))}
+                  </CircularButton>
+                 </a>))}
                   <Shade opacity={hoverState ? 1 : 0}></Shade>
           </Preview>
          

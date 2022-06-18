@@ -24,9 +24,9 @@ const Intro = () => {
     let container = useRef(null)
 
     useEffect(() => {
-      window.onunload = function () {
-        window.scrollTo(0, 0);
-      }
+     window.onunload = function(){
+       window.scroll(0,0)
+     }
       //intro timeline
     const introTimeline = gsap.timeline()
     introTimeline.to(text1, {y: 0, duration: .8})

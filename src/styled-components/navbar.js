@@ -11,7 +11,7 @@ export const MainContainer = styled.div`
     z-index: 10;
     background:rgba(245,245,245,0.8);
     backdrop-filter: blur(10px);
-    height: 82px;
+    height: 100px;
     @media (max-width: 600px) {
         height: 60px;
     }

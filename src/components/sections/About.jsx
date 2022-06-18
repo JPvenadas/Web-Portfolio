@@ -20,7 +20,7 @@ const About = () => {
     const [button1hover, SetButton1hover] = useState(false)
     const [button2hover, SetButton2hover] = useState(false)
   return (
-    <MainContainer>
+    <MainContainer id='about'>
           <Container>
           <TransparentTitle className='about-transparent untouchable'>About</TransparentTitle>
               <SectionTitle className='about'>About.</SectionTitle>

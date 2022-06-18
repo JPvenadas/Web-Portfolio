@@ -10,7 +10,7 @@ import ProjectGrid from '../objects/ProjectGrid'
 
 const Projects = () => {
   return (
-    <MainContainer>
+    <MainContainer id='projects'>
         <Container>
             <TransparentTitle className='untouchable TransparentWorks'>Works</TransparentTitle>
             <SectionTitle>Projects</SectionTitle>

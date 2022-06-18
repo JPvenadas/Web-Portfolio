@@ -7,7 +7,7 @@ import { TransparentTitle } from '../../styled-components/styled-objects'
 import SkillsGrid from '../objects/SkillsGrid'
 const Skills = () => {
   return (
-    <MainContainer>
+    <MainContainer id='skills'>
         <Container>
             <TransparentTitle className='untouchable TransparentSkill'>Skills</TransparentTitle>
             <SectionTitle className='skill'>My Tech Stacks</SectionTitle>

@@ -8,11 +8,12 @@ import { Container,
         HammenuContainer,
         Hammenu,
  } from "../../styled-components/navbar"
- import { useState } from "react"
+ import { useState} from "react"
  import gsap from "gsap"
 
 const Navbar = () => {
   const [navopen, setNavopen] = useState(false)
+
 
   window.onscroll = function(e) {
     // scrolling up
@@ -35,16 +36,16 @@ const Navbar = () => {
             <NavLinksContainer background={navopen? "#97AA90": "#EEF0EB"} right={navopen? "0": "-400px" }>
               <Navlinks right={navopen? "0": "-200px" }>
                 <Navlink className="nav-link" padding="20px 0 0 0">
-                  <a href="#something">About</a>
+                  <a href="#about">About</a>
                 </Navlink>
                 <Navlink className="nav-link">
-                 <a href="#something">Skills</a>
+                 <a href="#skills">Skills</a>
                 </Navlink>
                 <Navlink className="nav-link">
-                 <a href="#something">Projects</a>
+                 <a href="#projects">Projects</a>
                 </Navlink>
                 <Navlink className="nav-link" padding="0 0 20px 0">
-                  <a href="#something">Contact</a>
+                  <a href="#contacts">Contacts</a>
                 </Navlink>
               </Navlinks>
             </NavLinksContainer>
