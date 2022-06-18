@@ -20,7 +20,7 @@ const Navbar = () => {
     if(this.oldScroll > this.scrollY){
       gsap.to('.navbar', {top: 0, duration: .2, overwrite: true})
     // scrolling down
-    } else {
+    } else if(this.oldScroll < this.scrollY) {
       gsap.to('.navbar', {top: -100, duration: .2, overwrite: true})
     }
     this.oldScroll = this.scrollY;
