@@ -14,9 +14,11 @@ import {
     HeadingTitle,
     Email
  } from '../../styled-components/Contacts'
+import ContactLinks from '../objects/ContactLinks'
+
 const Contacts = () => {
   return (
-      <MainContainer>
+      <MainContainer id="contacts">
           <Green>
               <Container>
               <TransparentTitle className='untouchable'>Contacts</TransparentTitle>
@@ -30,6 +32,7 @@ const Contacts = () => {
                         <HeadingTitle>Email</HeadingTitle>
                         <Email href='mailto:jaypheevenadas.gmail.com' target="_blank">jaypheevenadas.gmail.com</Email>
                         <HeadingTitle>Social</HeadingTitle>
+                        <ContactLinks/>
                     </ContactContainer>
                 </FlexSection>
               </Container>

@@ -78,6 +78,7 @@ export const ContactContainer = styled.div`
     display: flex;
     flex-direction: column;
     padding-left: 40px;
+    gap: 15px;
 `
 export const Email = styled.a`
     color: #ffffff;
@@ -88,4 +89,17 @@ export const HeadingTitle = styled.h4`
     font-weight: 700;
     font-size: 20px;
     color: #ffffff;
+`
+export const SocialContainer = styled.div`
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+`
+export const SocialLink = styled.a`
+    width: 40px;
+    height: 40px;
+    background: url(${({background})=>background});
+    background-size: 100% 100%;
 `

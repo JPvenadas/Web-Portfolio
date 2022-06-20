@@ -71,7 +71,7 @@ export const Line = styled.div`
     background: #456E3E;
 `
 export const Title = styled.h3`
-    font-weight: 400;
+    font-weight: 300;
     font-size: 36px;
     color: #64795D;
     width: 100%;

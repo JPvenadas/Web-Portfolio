@@ -36,7 +36,7 @@ export const Greetings = styled.p`
 export const NameTitle = styled.h1`
     font-weight: 700;
     font-size: 93px;
-    color: #638D55;
+    color: #37582C;
     opacity: 0;
     transform: translateY(20px);
     @media (max-width: 900px) {
