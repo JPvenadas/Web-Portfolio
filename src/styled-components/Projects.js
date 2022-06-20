@@ -30,7 +30,10 @@ export const Grid = styled.div`
     gap: 60px 90px;
     padding: 0 30px;
     position: relative;
-    z-index: 8
+    z-index: 8;
+    @media (max-width: 900px) {
+        grid-template-columns: 1fr;
+    }
 `
 export const Project = styled.div`
     display: flex; 

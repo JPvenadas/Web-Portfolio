@@ -5,7 +5,7 @@ import Intro from './components/sections/Animation'
 import About from './components/sections/About'
 import Skills from './components/sections/Skills'
 import Projects from './components/sections/Projects'
-
+import Contacts from './components/sections/Contacts'
 
 const App = () => {
   return (
@@ -15,11 +15,14 @@ const App = () => {
       <Header/>
       </header>
       <main>
+        <Intro/>
         <About/>
         <Skills/>
         <Projects/>
       </main>
-      <Intro/>
+      <footer>
+        <Contacts/>
+      </footer>
     </div>
   )
 }

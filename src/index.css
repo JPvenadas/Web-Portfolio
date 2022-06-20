@@ -38,7 +38,7 @@ code {
   top: 16px
 }
 .disabled{
-  background: rgb(171, 171, 171) !important;
+  background: rgb(222, 222, 222) !important;
   cursor:not-allowed;
 }
 .ham-top.clicked{
