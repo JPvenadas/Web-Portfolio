@@ -21,7 +21,7 @@ export const Container = styled.div`
         align-items: center
     }
     @media (max-width: 600px) {
-        height: calc(100vh - 160px)
+        height: calc(100vh - 80px)
     }
 `
 export const Greetings = styled.p`
