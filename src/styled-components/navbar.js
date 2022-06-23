@@ -10,7 +10,6 @@ export const MainContainer = styled.div`
     right: 0;
     z-index: 10;
     background:rgba(245,245,245,0.8);
-    box-shadow: 2px 2px 10px rgba(0,0,0,.1);
     backdrop-filter: blur(10px);
     height: 100px;
     @media (max-width: 600px) {
