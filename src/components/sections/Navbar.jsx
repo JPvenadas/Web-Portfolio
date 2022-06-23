@@ -38,7 +38,7 @@ const Navbar = () => {
     <MainContainer className="navbar">
       <Container>
             <LogoContainer>
-              <Logo className="logo">Jp Venadas.</Logo>
+              <a href="#home"><Logo className="logo">Jp Venadas.</Logo></a>
             </LogoContainer>
             <NavLinksContainer background={navopen? "#97AA90": "#EEF0EB"} right={navopen? "0": "-400px" }>
               <Navlinks right={navopen? "0": "-200px" }>
