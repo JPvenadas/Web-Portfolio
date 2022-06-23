@@ -43,6 +43,9 @@ export const Project = styled.div`
     opacity: 0;
     transform: translateY(50px);
     box-shadow: 10px 10px 10px #efefef;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
 `
 export const Preview = styled.div`
     width: 100%;

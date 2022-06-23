@@ -27,6 +27,11 @@ const Navbar = () => {
     delete window.onscroll
  };
 
+ const changeState = () =>{
+  setNavopen(!navopen)
+  !navopen? gsap.to('body', {overflow: 'hidden'}): gsap.to('body', {overflow: 'initial'})
+ }
+
   return (
     <MainContainer className="navbar">
       <Container>
@@ -35,23 +40,22 @@ const Navbar = () => {
             </LogoContainer>
             <NavLinksContainer background={navopen? "#97AA90": "#EEF0EB"} right={navopen? "0": "-400px" }>
               <Navlinks right={navopen? "0": "-200px" }>
-                <Navlink className="nav-link" padding="20px 0 0 0">
+                <Navlink onClick={()=>{changeState()}} className="nav-link" padding="20px 0 0 0">
                   <a href="#about">About</a>
                 </Navlink>
-                <Navlink className="nav-link">
+                <Navlink onClick={()=>{changeState()}} className="nav-link">
                  <a href="#skills">Skills</a>
                 </Navlink>
-                <Navlink className="nav-link">
+                <Navlink onClick={()=>{changeState()}} className="nav-link">
                  <a href="#projects">Projects</a>
                 </Navlink>
                 <Navlink className="nav-link" padding="0 0 20px 0">
-                  <a href="#contacts">Contacts</a>
+                  <a onClick={()=>{changeState()}} href="#contacts">Contacts</a>
                 </Navlink>
               </Navlinks>
             </NavLinksContainer>
             <HammenuContainer className="ham" onClick={()=>{
-              setNavopen(!navopen)
-              !navopen? gsap.to('body', {overflow: 'hidden'}): gsap.to('body', {overflow: 'initial'})
+              changeState()
               }}>
               <Hammenu>
                 <div className={`ham-top ${navopen? 'clicked': ''}`}></div>
