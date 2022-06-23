@@ -8,10 +8,10 @@ import telegram from '../../Images/Telegram-white.png'
 const ContactLinks = () => {
   return (
     <SocialContainer>
-        <SocialLink background={github}></SocialLink>
-        <SocialLink background={facebook}></SocialLink>
-        <SocialLink background={linkedin}></SocialLink>
-        <SocialLink background={telegram}></SocialLink>
+        <SocialLink target="_blank" rel="noreferrer" href='https://github.com/JPvenadas' background={github}></SocialLink>
+        <SocialLink target="_blank" rel="noreferrer" href='https://www.facebook.com/jp.venadas.334' background={facebook}></SocialLink>
+        <SocialLink target="_blank" rel="noreferrer" href='www.linkedin.com/in/Jp-Venadas' background={linkedin}></SocialLink>
+        <SocialLink target="_blank" rel="noreferrer" href='https://t.me/JpVenadas' background={telegram}></SocialLink>
     </SocialContainer>
   )
 }
