@@ -28,9 +28,11 @@ const Navbar = () => {
  };
 
  const changeState = () =>{
-  setNavopen(!navopen)
-  !navopen? gsap.to('body', {overflow: 'hidden'}): gsap.to('body', {overflow: 'initial'})
- }
+  if(window.innerWidth <= 600){
+    setNavopen(!navopen)
+    !navopen? gsap.to('body', {overflow: 'hidden'}): gsap.to('body', {overflow: 'initial'})
+  }
+  }
 
   return (
     <MainContainer className="navbar">

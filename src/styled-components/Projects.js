@@ -15,6 +15,9 @@ export const Container = styled.div`
     align-items: center;
     padding: 120px 0;
     gap: 65px;
+    @media (max-width: 600px) {
+        padding: 50px 0;
+    }
 `
 export const SectionTitle = styled.h2`
     font-weight: 700;
@@ -98,6 +101,9 @@ export const DescriptionContainer = styled.div`
     position: relative;
     gap: 10px;
     justify-content: center;
+    @media (max-width: 600px) {
+        padding: 30px 15px 15px 15px;
+    }
 `
 export const DescriptionTitle = styled.h4`
     font-weight: 600;
