@@ -36,7 +36,7 @@ export const Greetings = styled.p`
 export const NameTitle = styled.h1`
     font-weight: 700;
     font-size: 93px;
-    color: #37582C;
+    color: #456E3E;
     opacity: 0;
     transform: translateY(20px);
     @media (max-width: 900px) {
@@ -51,7 +51,7 @@ export const NameTitle = styled.h1`
 export const Hobby = styled.h3`
     font-weight: 700;
     font-size: 48px;
-    color: #97AA90;
+    color: #80A075;
     opacity: 0;
     transform: translateY(20px);
     @media (max-width: 900px) {
@@ -63,7 +63,7 @@ export const Hobby = styled.h3`
     }
 `
 export const Highlighted = styled.span`
-    color: #788E71;
+    
 `
 export const Description = styled.h4`
     font-weight: 600;

@@ -16,11 +16,11 @@ import { useState, useRef } from "react"
 import gsap from "gsap";
 
 const ProjectItem = ({bg, title, description, buttons, Stacks}) => {
-    const [hoverState, setHoverState] = useState(false);
+    const [projectHoverState, setProjectHoverState] = useState(false);
     let circularButton = useRef([])
 
     const buttonSpawn = (e) => {
-        if (!hoverState){
+        if (!projectHoverState){
             let tl = gsap.to(circularButton.current, {duration: .7,  delay: .5, ease: 'expo', y: 0, stagger: .2, overwrite: true})
             if(tl.isActive()){
                 e.preventDefault(); // this will also stop <a> tag links
@@ -31,8 +31,8 @@ const ProjectItem = ({bg, title, description, buttons, Stacks}) => {
     }
   return (
    <Project className="project"
-   onMouseEnter={(e)=>{setHoverState(true); buttonSpawn(e)}}
-   onMouseLeave={(e)=>{setHoverState(false); buttonSpawn(e)}}>
+   onMouseEnter={(e)=>{setProjectHoverState(true); buttonSpawn(e)}}
+   onMouseLeave={(e)=>{setProjectHoverState(false); buttonSpawn(e)}}>
           <Preview background={bg}>
               {buttons.map((button, i) => (
                  <a target="_blank" rel="noreferrer"  href={button.link}>
@@ -40,7 +40,7 @@ const ProjectItem = ({bg, title, description, buttons, Stacks}) => {
                       <ButtonIcon src={button.img}></ButtonIcon>
                   </CircularButton>
                  </a>))}
-                  <Shade opacity={hoverState ? 1 : 0}></Shade>
+                  <Shade opacity={projectHoverState ? 1 : 0}></Shade>
           </Preview>
          
           <DescriptionSection>

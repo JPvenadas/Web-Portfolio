@@ -26,7 +26,7 @@ const About = () => {
               <SectionTitle className='about'>About.</SectionTitle>
               <Grid>
                   <GridItem className='about-left' translate='translate(-60px)' direction="column" align='center' justify="flex-end">
-                      <Image className='untouchable' src={jp}>
+                      <Image alt='Jp Venadas Photo' className='untouchable' src={jp}>
                       </Image>
                   </GridItem>
                   <GridItem className='line' display="none" translate='translateY(60px)' direction="column" align='center' justify="center">
@@ -46,10 +46,12 @@ const About = () => {
                           </Interest>
                       </div>
                       <ButtonContainer>
-                          <Button color1="#47883c" color2="#456E3E" letter="white"
-                              onMouseEnter={() => { SetButton1hover(true) }}
-                              onMouseLeave={() => { SetButton1hover(false) }}>
-                              {button1hover ? <ion-icon class="icon" color="white" name="laptop-outline"></ion-icon> : ''}  Work with me?</Button>
+                          <a href="#contacts">
+                              <Button color1="#47883c" color2="#456E3E" letter="white"
+                                  onMouseEnter={() => { SetButton1hover(true) }}
+                                  onMouseLeave={() => { SetButton1hover(false) }}>
+                                  {button1hover ? <ion-icon class="icon" color="white" name="laptop-outline"></ion-icon> : ''}  Work with me?</Button>
+                          </a>
                           <Button color1="#47883c" color2="#456E3E" letter="white"
                               onMouseEnter={() => { SetButton2hover(true) }}
                               onMouseLeave={() => { SetButton2hover(false) }}>

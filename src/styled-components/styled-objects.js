@@ -30,7 +30,7 @@ export const TransparentTitle = styled.h3`
     position: absolute;
     font-weight: 700;
     font-size: 250px;
-    color: rgba(117, 247, 72, 0.1);
+    color: rgba(117, 247, 72, 0.2);
     top: 100px;
     left: -50px;
     @media (max-width: 600px) {

@@ -5,6 +5,7 @@ export const MainContainer = styled.div`
     justify-content: center;
     align-items: center;
     display: flex;
+    background: #fbfbfb;
 `
 export const Container = styled.div`
     width: 1200px;
@@ -45,7 +46,6 @@ export const Project = styled.div`
     flex-direction: column;
     opacity: 0;
     transform: translateY(50px);
-    box-shadow: 10px 10px 10px #efefef;
     @media (max-width: 600px) {
         width: 100%;
     }
@@ -82,7 +82,7 @@ export const CircularButton = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(200px)
+    transform: translateY(200px);
 `
 export const ButtonIcon = styled.img`
     width: 30px;

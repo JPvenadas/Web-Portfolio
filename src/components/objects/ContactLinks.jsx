@@ -10,7 +10,7 @@ const ContactLinks = () => {
     <SocialContainer>
         <SocialLink target="_blank" rel="noreferrer" href='https://github.com/JPvenadas' background={github}></SocialLink>
         <SocialLink target="_blank" rel="noreferrer" href='https://www.facebook.com/jp.venadas.334' background={facebook}></SocialLink>
-        <SocialLink target="_blank" rel="noreferrer" href='www.linkedin.com/in/Jp-Venadas' background={linkedin}></SocialLink>
+        <SocialLink target="_blank" rel="noreferrer" href='https://linkedin.com/in/Jp-Venadas' background={linkedin}></SocialLink>
         <SocialLink target="_blank" rel="noreferrer" href='https://t.me/JpVenadas' background={telegram}></SocialLink>
     </SocialContainer>
   )

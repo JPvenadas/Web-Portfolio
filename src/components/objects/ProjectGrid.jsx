@@ -5,6 +5,7 @@ import ProjectItem from "./ProjectItem"
 import web from './../../Images/Web.png'
 import github from './../../Images/Source.png'
 import download from './../../Images/Download.png'
+import play from './../../Images/Play.png'
 
 //project images
 import portfolio from './../../Images/Project1.png'
@@ -41,7 +42,7 @@ const ProjectGrid = () => {
           disabled: false
           },
 
-          {img: web,
+          {img: play,
           link: "https://slidespuzzle.netlify.app/",
           disabled: false
         }
