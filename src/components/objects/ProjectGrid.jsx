@@ -10,7 +10,7 @@ import play from './../../Images/Play.png'
 //project images
 import portfolio from './../../Images/Project1.png'
 import slides from './../../Images/Project2.png'
-import easybank from './../../Images/Project3.png'
+import capstone from './../../Images/capstone.jpg'
 import mynotepad from './../../Images/Project4.png'
 
 const ProjectGrid = () => {
@@ -32,6 +32,22 @@ const ProjectGrid = () => {
          Stacks={["React", "Figma", "Styled-components", "GSAP"]}
         />
         <ProjectItem
+         bg={capstone}
+         title="Sapang MIS"
+         description = "A Barangay(Village) Management information System that we have created for Sapang, Binangonan, Rizal. This is our Capstone Project that I have developed alongside with my team in our university"
+         buttons={[
+          {img: github,
+           link: "https://github.com/JPvenadas/Web-Portfolio.git",
+           disabled: false
+          },
+          {img: web,
+          link: "https://barangaysapangmanagementsystem.000webhostapp.com/index.php",
+          disabled: false
+          }
+        ]}
+        Stacks={["PHP", "MYSQL", "CSS", "SMS API"]}
+         />
+        <ProjectItem
          bg={slides}
          title="Slides"
          description="A web game that I made for fun. As I love solving puzzles and playing Wild Rift. I created a classic sliding puzzle game with League of Legends theme. It has three level of difficulty and 50 different images"
@@ -48,22 +64,6 @@ const ProjectGrid = () => {
         }
         ]}
          Stacks={["HTML", "CSS", "Vanilla Javascript"]}
-        />
-         <ProjectItem
-         bg={[easybank]}
-         title="EasyBank"
-         description="A simple landing page interface. An intermidiate challenge from Frontend Mentor that I take to test wether I could develop/convert a design(Picture) to a website Interface."
-         buttons={[
-          {img: github,
-            link: "https://github.com/JPvenadas/EasyBank-FrontendMentor.git",
-            disabled: false
-          },
-          {img: web,
-          link: "https://easy-bank-frontend-mentor.vercel.app/",
-          disabled: false
-          }
-        ]}
-         Stacks={["React", "Styled-components"]}
         />
          <ProjectItem
          bg={mynotepad}

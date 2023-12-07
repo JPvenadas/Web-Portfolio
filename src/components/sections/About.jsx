@@ -52,10 +52,7 @@ const About = () => {
                                   onMouseLeave={() => { SetButton1hover(false) }}>
                                   {button1hover ? <ion-icon class="icon" color="white" name="laptop-outline"></ion-icon> : ''}  Work with me?</Button>
                           </a>
-                          <Button color1="#47883c" color2="#456E3E" letter="white"
-                              onMouseEnter={() => { SetButton2hover(true) }}
-                              onMouseLeave={() => { SetButton2hover(false) }}>
-                              {button2hover ? <ion-icon class="icon" color="white" name="arrow-down-circle-outline"></ion-icon> : ''}  Know me more?</Button>
+                          
                       </ButtonContainer>
                   </GridItem>
               </Grid>

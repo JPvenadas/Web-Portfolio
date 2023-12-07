@@ -12,7 +12,7 @@ import mui from '../../Images/Material.png'
 import git from '../../Images/Git.png'
 import github from '../../Images/Github.png'
 import react from '../../Images/React.png'
-import Scomp from '../../Images/Styled Components.png'
+import restapi from '../../Images/API.png'
 import php from '../../Images/PHP.png'
 import mysql from '../../Images/Mysql.png'
 
@@ -28,7 +28,7 @@ const SkillsGrid = () => {
         <Techstack Img={git} tech="Git"></Techstack>
         <Techstack Img={github} tech="Github"></Techstack>
         <Techstack Img={react} tech="React/ native"></Techstack>
-        <Techstack Img={Scomp} tech="Styled comp."></Techstack>
+        <Techstack Img={restapi} tech="REST API"></Techstack>
         <Techstack Img={php} tech="PHP"></Techstack>
         <Techstack Img={mysql} tech="Mysql"></Techstack>
     </Grid>
