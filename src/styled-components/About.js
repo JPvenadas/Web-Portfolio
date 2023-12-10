@@ -43,7 +43,7 @@ export const GridItem = styled.div`
         display: ${({display})=> display};
         text-align: center;
         gap: 20px;
-     }
+    }
 `
 export const Image = styled.img`
     width: 397px;

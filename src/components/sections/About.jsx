@@ -52,7 +52,6 @@ const About = () => {
                                   onMouseLeave={() => { SetButton1hover(false) }}>
                                   {button1hover ? <ion-icon class="icon" color="white" name="laptop-outline"></ion-icon> : ''}  Work with me?</Button>
                           </a>
-                          
                       </ButtonContainer>
                   </GridItem>
               </Grid>

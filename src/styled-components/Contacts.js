@@ -14,15 +14,31 @@ export const Green = styled.div`
     justify-content: center;
     grid-template-rows: 1fr 46px;
     grid-template-columns: 100%;
+    @media (max-width: 600px) {
+      height: auto;
+      padding: 75px 0 0 0;
+    }
 `
 export const Container = styled.div`
     width: 1200px;
+    max-width: 100%;
     padding: 0 40px;
     justify-self: center;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 900px) {
+        width: 900px;
+       
+    }
+    @media (max-width: 600px) {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        text-align: center;
+    }
 `
 export const BottomContainer = styled.div`
     border-top: solid 4px #d9d9d9;
@@ -42,6 +58,9 @@ export const TransparentTitle = styled.p`
     top: -40px;
     left: 0;
     color: rgba(117, 247, 72, 0.1);
+    @media (max-width: 600px) {
+       display: none;
+    }
 `
 export const FlexSection = styled.div`
     width: 450px;
@@ -52,17 +71,30 @@ export const FlexSection = styled.div`
     align-items: ${({align})=> align};
     position: relative;
     top: -30px;
+    @media (max-width: 900px) {
+        width: 350px;
+        height: auto;
+    }
+    
 `
 export const SectionTitle = styled.h2`
     font-weight: 700;
     font-size: 48px;
     color: #EAEAEA;
+    @media (max-width: 900px) {
+        white-space: nowrap;
+    }
 `
 export const SubTitle = styled.h2`
     font-weight: 400;
     font-size: 24px;
     width: 270px;
     color: #FFFFFF;
+    @media (max-width: 600px) {
+      width: 100%;
+      font-size: 15px;
+      font-weight: bold;
+    }
 `
 export const Description = styled.p`
     font-weight: 400;
@@ -70,6 +102,9 @@ export const Description = styled.p`
     line-height: 22px;
     color: #FFFFFF;
     width: 367px;
+    @media (max-width: 900px) {
+        width: 100%;
+    }
 `
 export const ContactContainer = styled.div`
     border-left: 2px solid white;
@@ -79,6 +114,15 @@ export const ContactContainer = styled.div`
     flex-direction: column;
     padding-left: 40px;
     gap: 15px;
+    @media (max-width: 600px) {
+       border: none;
+       padding: 0;
+       justify-content: center;
+       align-items: center;
+       padding: 20px 0;
+       height: auto;
+       gao:80px;
+    }
 `
 export const Email = styled.a`
     color: #ffffff;
@@ -96,6 +140,9 @@ export const SocialContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 20px;
+    @media (max-width: 600px) {
+       justify-content: center;
+    }
 `
 export const SocialLink = styled.a`
     width: 40px;
