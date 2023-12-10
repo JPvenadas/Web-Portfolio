@@ -45,11 +45,17 @@ export const BottomContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 600px) {
+        border-top: solid 2px #d9d9d9;
+    }
 `
 export const Copyright = styled.div`
     font-weight: 500;
     font-size: 13px;
     color: white;
+    @media (max-width: 600px) {
+        font-size: 11px;
+    }
 `
 export const TransparentTitle = styled.p`
     font-weight: 700;
@@ -87,8 +93,9 @@ export const SectionTitle = styled.h2`
     @media (max-width: 900px) {
         white-space: nowrap;
     }
-    @media (max-width: 900px) {
+    @media (max-width: 600px) {
        font-size: 30px;
+       padding-bottom: 20px;
     }
 `
 export const SubTitle = styled.h2`
