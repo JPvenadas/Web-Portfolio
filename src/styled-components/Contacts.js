@@ -75,7 +75,10 @@ export const FlexSection = styled.div`
         width: 350px;
         height: auto;
     }
-    
+    @media (max-width: 600px) {
+        justify-content: center;
+        align-items: center;
+    }
 `
 export const SectionTitle = styled.h2`
     font-weight: 700;
@@ -83,6 +86,9 @@ export const SectionTitle = styled.h2`
     color: #EAEAEA;
     @media (max-width: 900px) {
         white-space: nowrap;
+    }
+    @media (max-width: 900px) {
+       font-size: 30px;
     }
 `
 export const SubTitle = styled.h2`
@@ -92,7 +98,7 @@ export const SubTitle = styled.h2`
     color: #FFFFFF;
     @media (max-width: 600px) {
       width: 100%;
-      font-size: 15px;
+      font-size: 12px;
       font-weight: bold;
     }
 `
@@ -103,7 +109,9 @@ export const Description = styled.p`
     color: #FFFFFF;
     width: 367px;
     @media (max-width: 900px) {
+        font-size: 12px;
         width: 100%;
+        max-width: 250px;
     }
 `
 export const ContactContainer = styled.div`
@@ -121,18 +129,24 @@ export const ContactContainer = styled.div`
        align-items: center;
        padding: 20px 0;
        height: auto;
-       gao:80px;
+       gap: 6px;
     }
 `
 export const Email = styled.a`
     color: #ffffff;
     font-weight: 500;
     font-size: 14px;
+    @media (max-width: 600px) {
+       font-size: 12px;
+    }
 `
 export const HeadingTitle = styled.h4`
     font-weight: 700;
     font-size: 20px;
     color: #ffffff;
+    @media (max-width: 600px) {
+      font-size: 15px;
+    }
 `
 export const SocialContainer = styled.div`
     width: 250px;
@@ -149,4 +163,8 @@ export const SocialLink = styled.a`
     height: 40px;
     background: url(${({background})=>background});
     background-size: 100% 100%;
+    @media (max-width: 600px) {
+        width: 30px;
+        height: 30px;
+    }
 `
