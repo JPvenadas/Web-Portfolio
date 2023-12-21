@@ -35,14 +35,14 @@ const About = () => {
                   <GridItem className='about-right' translate='translate(60px,-15px)' direction="column" align='flex-start' justify="center">
                       <Title>What do I do</Title>
                       <OccupationDescription>
-                          I am Jp Venadas a Frontend web developer based in the Philippines. I code beautiful and accessible custom frontend websites in React or even in Vanilla css/js. I am currently pursuing Information Technology in University of Rizal System.  I am looking for more opportunities as a developer and I would be glad to hear something from you.
+                      Hello, I'm Jp Venadas, a Fullstack Web Developer based in the Philippines. I specialize in crafting visually appealing and accessible websites, utilizing my skills in both frontend and backend technologies. I have hands-on experience in building robust applications using JS, PHP, MYSQL. I also use React.js to create dynamic and responsive frontend interfaces. Currently pursuing an IT degree at the University of Rizal System, I'm eager for new opportunities to contribute to innovative projects. Let's connect and discuss how I can bring my skills to your team!
                       </OccupationDescription>
                       <div style={{width: "100%"}}>
                           <Subtitle>
                               Recent Interests
                           </Subtitle>
                           <Interest>
-                              Blockchain Development, Web design, Financial Literacy, Freelancing, Contributing to open source projects
+                            User Experience, Freelancing, Backend Development, Contributing to open source projects
                           </Interest>
                       </div>
                       <ButtonContainer>

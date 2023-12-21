@@ -22,7 +22,7 @@ const Header = () => {
             <NameTitle className='name'>Jayphe Venadas</NameTitle>
             <Hobby className='hobby'>I Create and Develop stuffs</Hobby>
             <Description className='description'>
-            I am a Software Developer based in the Philippines, I have profound interest in coding especially in Web  Development, and I am always always up for learning something new!
+            I am a Software Developer based in the Philippines, I have profound interest in coding especially in Web  Development, and I am always up for learning something new!
             </Description>
             <ButtonContainer>
             <a href="#contacts">

@@ -12,6 +12,8 @@ import portfolio from './../../Images/Project1.png'
 import slides from './../../Images/Project2.png'
 import capstone from './../../Images/capstone.jpg'
 import mynotepad from './../../Images/Project4.png'
+import dystoSpeed from './../../Images/Project6.png'
+import wwtbm from './../../Images/Project5.png'
 
 const ProjectGrid = () => {
   return (
@@ -80,6 +82,38 @@ const ProjectGrid = () => {
           }
         ]}
          Stacks={["React Native", "Async Storage", "Formik"]}
+        />
+
+      <ProjectItem
+         bg={wwtbm}
+         title="WWTM"
+         description="A commissioned Web-based Project of the classic game 'Who wants to be a millionaire'. Test your knowledge, challenge yourself with lifelines, and see if you have what it takes to become a virtual millionaire in this engaging web-based game"
+         buttons={[
+          {img: github,
+           link: "https://github.com/JPvenadas/WWTBM.git",
+           disabled: false
+          },
+          {img: play,
+          disabled: true
+          }
+        ]}
+         Stacks={["Javascript", "CSS", "PHP" , "MYSQL"]}
+        />
+
+      <ProjectItem
+         bg={dystoSpeed}
+         title="DystoSpeed"
+         description="DystoSpeed: Urban Pursuit is a relentless 2D racing game where you must outrun zombies, navigate obstacles, and survive the apocalypse in a high-speed pursuit for your life!"
+         buttons={[
+          {img: github,
+           disabled: true
+          },
+          {img: download,
+          link: "https://drive.google.com/file/d/1Ajl7M5qLStoRBQvE2K8bmglDJeAzn9Ot/view?usp=sharing",
+          disabled: false
+          }
+        ]}
+         Stacks={["Unity"]}
         />
     </Grid>
   )
